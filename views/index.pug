@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+
+html
+  head 
+    title faishal dance academy
+    style
+       include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/3.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact Us]
+            li #[a(href="/") Class Info]
+    
+    section#introSection
+         div Welcome to Faishal's Dance Academy
+         div.small  Eat Sleep Dance Repeat
+
+    section#MissionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png") 
+                div.card-content
+                    p This is the best couple dance academy of the universe
+                 
+        div.card
+            h3 Dance te way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/4.png") 
+                div.card-content
+                    p This is the best hip-hop dance academy of the universe
+        div.card
+            h3 Show your skill
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png") 
+                div.card-content
+                    p This is the best solo dance academy of the universe 
+    
+    section#sponsership
+        h2 Ours Sponsors
+        div#sponsors
+           img(src="/static/logo4.png", alt="sponsers img" class="spimage")
+           img(src="/static/logo3.png", alt="sponsers img" class="spimage")
+           img(src="/static/logo2.png", alt="sponsers img" class="spimage")
+           img(src="/static/logo1.png", alt="sponsers img" class="spimage")
+    
+    
+    footer#footer
+            | Copyright € 2021 FaishalDanceAcademy.com | All right reserved
+    script
+       include ../static/index.js 
